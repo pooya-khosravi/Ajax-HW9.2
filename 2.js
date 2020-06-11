@@ -2,7 +2,6 @@ let mergedArrays;
 
 let xhttp1 = new XMLHttpRequest();
 xhttp1.onreadystatechange = function () {
-    
     if(this.readyState === 4 && this.status === 200)
     {
         let objArr1 = JSON.parse(this.responseText);
