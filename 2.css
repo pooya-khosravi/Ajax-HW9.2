@@ -1,0 +1,182 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    #parent1{
+        flex-wrap: wrap;
+    }
+    #myPanel{
+        margin-top: 15px;
+    }
+
+    .Lg-1 {width: 8.33%;}
+    .Lg-2 {width: 16.66%;}
+    .Lg-3 {width: 25%;}
+    .Lg-4 {width: 33.33%;}
+    .Lg-5 {width: 41.66%;}
+    .Lg-6 {width: 50%;}
+    .Lg-7 {width: 58.33%;}
+    .Lg-8 {width: 66.66%;}
+    .Lg-9 {width: 75%;}
+    .Lg-10 {width: 83.33%;}
+    .Lg-11 {width: 91.66%;}
+    .Lg-12 {width: 100%;}
+}
+
+body{
+    margin: 0px;
+}
+
+#parent1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#parent1 #myTable{
+    width: 800px;
+    height: auto;
+    border-collapse: collapse;
+}
+
+#myTable tr{
+    height: 50px;
+    color: gray;
+}
+
+#myTable th,td{
+    border: solid 1px rgb(153, 153, 153);
+}
+
+#myTable td{
+    padding-left: 10px;
+}
+
+#myTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#myTable th{
+    background-color: rgb(124, 74, 51);
+    border-bottom: solid 2px rgb(153, 153, 153);
+}
+
+#parent1 #myPanel{
+    width: 450px;
+    height: 400px;
+    border: solid 1px red;
+    border-radius: 10px;
+    display: none;
+    position: relative;
+}
+
+#myPanel h3{
+    margin: 0px 3px 0px 5px;
+    text-align: center;
+}
+
+#myPanel .close{
+    position: absolute;
+    color: red;
+    right: 15px;
+    font-size: 20px;
+}
+#myPanel .close:hover{
+    cursor: pointer;
+}
+
+#myPanel #parentInputs{
+    width: 100%;
+    height: 340px;
+    display: flex;
+}
+
+#myPanel #inputs{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#inputs label{ 
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+#inputs p{
+    width: 90%;
+    margin: 5px 0px 5px 20px;
+}
+
+#parentInputs #change-buttons{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#parentInputs .save{
+    width: auto;
+    border: none;
+    border: 3px;
+    background-color: green;
+    color: white;
+}
+
+#parentInputs .cancel{
+    width: auto;
+    border: none;
+    border: 3px;
+    background-color: red;
+    color: white;
+    margin-top: 15px;
+}
+
+#myPanel #buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#myPanel #buttons button{
+    border: solid 1px black;
+    border-radius: 3px;
+    width: 60px;
+    height: 30px;
+    background-color: gray;
+    color: white;
+}
+
+#parent2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#parent2 #create1{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+
+button, input{
+    outline: none;
+}
+button:hover{
+    cursor: pointer;
+}
